@@ -1,6 +1,4 @@
-package top.tobing.jz_3;
-
-import java.util.Arrays;
+package top.tobing.jz_03;
 
 /**
  * @Author tobing

@@ -1,4 +1,4 @@
-package top.tobing.jz_6;
+package top.tobing.jz_06;
 
 import java.util.ArrayList;
 import java.util.Arrays;

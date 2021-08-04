@@ -1,4 +1,4 @@
-package top.tobing.jz_3;
+package top.tobing.jz_03;
 
 import java.util.HashSet;
 import java.util.Set;

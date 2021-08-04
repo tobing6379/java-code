@@ -1,4 +1,4 @@
-package top.tobing.jz_5;
+package top.tobing.jz_05;
 
 /**
  * @Author tobing
