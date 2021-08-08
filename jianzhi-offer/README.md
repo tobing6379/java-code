@@ -42,6 +42,13 @@
 + [剑指 Offer 14- II. 剪绳子 II](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/)
   + 解法一：[动态规划](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_14_ii/Solution.java)：思想和上一条类似，主要是范围变大了，不能用int直接储存，因为要求余:worried:
   + 解法一：[贪心-数学](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/solution/mian-shi-ti-14-ii-jian-sheng-zi-iitan-xin-er-fen-f/)：不会:no_entry::no_entry:
++ [剑指 Offer 15. 二进制中1的个数](https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/)
+  + 解法1：[简单位移法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_15/Solution.java)：最直观的思路每次将其右移以为，如果移位之后对2求余，不为零则表示当前位为1，依次统计:laughing:
+  + 解法2：[位运算法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_15/Solution1.java)：将上面的对2求余，转换为位运算，Java支持为运算:laughing:
+  + 解法3：[JavaAPI解法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_15/Solution2.java)：Java提供了对二进制位的统计，采用的是一种很巧妙的方式，此处不展开:no_entry::no_entry:
++ [剑指 Offer 16. 数值的整数次方](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
+  + 解法1：[暴力运算](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_16/Solution.java)：最直观简答的做法，就是每次用一个变量，每次乘上x，循环n次:laughing:
+  + 解法2：[快速幂](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_16/Solution1.java)：这个是用来降低复杂度的，方法非常巧妙，利用上了二进制的性质:no_entry::no_entry:
 
 
 
