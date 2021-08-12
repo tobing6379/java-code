@@ -234,6 +234,13 @@ LOD 法则，Law of Demeter ，迪米特法则，最小知识原则
 >
 > 储存之外JDK中的System类也使用了单例设计模式。
 
+单例设计模式在编写时，需要关注的点主要为以下几个点：
+
++ 构造函数需要是 private 访问权限的，这样才能避免外部通过 new 创建实例；
++ 考虑对象创建时的线程安全问题；
++ 考虑是否支持延迟加载；
++ 考虑 getInstance() 性能是否高（是否加锁）。
+
 单列设计模式一共有七种实现方式：
 
 | 单例模式                                                     | 并发安全   | 是否懒加载 | 备注                                              | 是否推荐 |
@@ -245,6 +252,20 @@ LOD 法则，Law of Demeter ，迪米特法则，最小知识原则
 | [双重检查锁](https://github.com/Tobingindex/java-code/blob/master/java-design-pattern/src/main/java/design_pattern/singleton/SingletonDemo05.java) | :+1:       | :+1:       | 使用synchronized块和双重判断，高并发性能较好      | 推荐     |
 | [静态内部类](https://github.com/Tobingindex/java-code/blob/master/java-design-pattern/src/main/java/design_pattern/singleton/SingletonDemo06.java) | :+1:       | :+1:       | 利用JVM内部机制，既实现线程安全，又保证了并发性能 | 推荐     |
 | [枚举](https://github.com/Tobingindex/java-code/blob/master/java-design-pattern/src/main/java/design_pattern/singleton/SingletonDemo07.java) | :+1:       | :+1:       | 利用JVM内部机制，既实现线程安全，又保证了并发性能 | 推荐     |
+
+提前初始化的利弊是要根据使用场景而定的，并不是说提前占用了资源就是不好的。
+
+如果初始化耗时长，最好不要等到真正要用它的时候，才去执行这个耗时长的初始化过程，这会影响到系统的性能。采用饿汉式实现方式，将耗时的初始化操作，提前到程序启动的时候完成，这样就能避免在程序运行的时候，再去初始化导致的性能问题。  
+
+如果实例占用资源多，按照 fail-fast 的设计原则（有问题及早暴露），那我们也希望在程序启动时就将这个实例初始化好。如果资源不够，就会在程序启动的时候触发报错（比如Java 中的 PermGen Space OOM），我们可以立即去修复。这样也能避免在程序运行一段时间后，突然因为初始化这个实例占用资源过多，导致系统崩溃，影响系统的可用性。
+
+除此之外，单例模式还会存在以下问题：
+
++ 单例对 OOP 特性的支持不友好
++ 单例会隐藏类之间的依赖关系
++ 单例对代码的扩展性不友好
++ 单例对代码的可测试性不友好
++ 单例不支持有参数的构造函数
 
 #### 简单工厂模式
 
