@@ -1122,20 +1122,20 @@ class Node {
 
 #### BST 代码实现
 
-+ [插入](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L65)
-+ [包含](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L91)
-+ [前序遍历【递归】](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L118)
-+ [中序遍历【递归】](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L140)
-+ [后序遍历【递归】](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L163)
-+ [前序遍历【非递归】](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L186)
-+ [中序遍历【非递归】](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L218)
-+ [后序遍历【非递归】](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L212)
-+ [层序遍历 ](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L224)
-+ [获取最大值](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L260)
-+ [获取最小值](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L249)
-+ [删除最大值](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L316)
-+ [删除最小值](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L224)
-+ [删除任意元素](https://github.com/Tobingindex/java-code/blob/master/java-datastruct/src/main/java/top/tobing/tree/binary_search_tree/BST.java#L342)
++ [插入](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L65)
++ [包含](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L91)
++ [前序遍历【递归】](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L118)
++ [中序遍历【递归】](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L140)
++ [后序遍历【递归】](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L163)
++ [前序遍历【非递归】](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L186)
++ [中序遍历【非递归】](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L218)
++ [后序遍历【非递归】](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L212)
++ [层序遍历 ](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L224)
++ [获取最大值](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L260)
++ [获取最小值](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L249)
++ [删除最大值](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L316)
++ [删除最小值](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L224)
++ [删除任意元素](https://github.com/Tobingindex/java-code/blob/master/java-datastruct-algorithm/src/main/java/top/tobing/datastruct/tree/binary_search_tree/BST.java#L342)
 
 ### AVL
 

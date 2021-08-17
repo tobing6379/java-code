@@ -1,4 +1,4 @@
-package top.tobing.linear.linked;
+package top.tobing.datastruct.linear.linked;
 
 /**
  * @Author tobing

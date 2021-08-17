@@ -1,4 +1,4 @@
-package top.tobing.linear.array;
+package top.tobing.datastruct.linear.array;
 
 /**
  * @Author tobing

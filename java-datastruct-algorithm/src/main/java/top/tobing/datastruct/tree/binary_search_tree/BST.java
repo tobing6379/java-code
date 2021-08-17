@@ -1,4 +1,4 @@
-package top.tobing.tree.binary_search_tree;
+package top.tobing.datastruct.tree.binary_search_tree;
 
 import java.util.LinkedList;
 import java.util.Queue;
