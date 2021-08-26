@@ -49,6 +49,19 @@
 + [剑指 Offer 16. 数值的整数次方](https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/)
   + 解法1：[暴力运算](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_16/Solution.java)：最直观简答的做法，就是每次用一个变量，每次乘上x，循环n次:laughing:
   + 解法2：[快速幂](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_16/Solution1.java)：这个是用来降低复杂度的，方法非常巧妙，利用上了二进制的性质:no_entry::no_entry:
++ [剑指 Offer 17. 打印从1到最大的n位](https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/)
+  + 解法1：[普通解法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_17/Solution.java)：先取到n位数的上限，然后从1到n开始遍历填充到数组中:laughing:
+  + 解法2：[全排序](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_17/Solution1.java)：题目符合全排序的性质，但未完全理解:no_entry:
++ [剑指 Offer 18. 删除链表的节点](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)
+  + 解法1：[递归法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_18/Solution.java)：利用递归，如果递归的当前节点属于需要删除的节点，则不返回该节点，而是返回下一个节点:laughing:
+  + 解法2：[迭代法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_18/Solution1.java)：利用虚拟头结点统一边界情况:laughing:
+
++ [剑指 Offer 19. 正则表达式匹配](https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/)
+  + 解法1：[动态规划](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_19/Solution.java)：粗略看懂，跪了，代码中有题解的地址。:no_entry::no_entry::no_entry:
+
+
+
+
 
 
 
