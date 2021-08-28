@@ -55,9 +55,21 @@
 + [剑指 Offer 18. 删除链表的节点](https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/)
   + 解法1：[递归法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_18/Solution.java)：利用递归，如果递归的当前节点属于需要删除的节点，则不返回该节点，而是返回下一个节点:laughing:
   + 解法2：[迭代法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_18/Solution1.java)：利用虚拟头结点统一边界情况:laughing:
-
 + [剑指 Offer 19. 正则表达式匹配](https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/)
   + 解法1：[动态规划](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_19/Solution.java)：粗略看懂，跪了，代码中有题解的地址。:no_entry::no_entry::no_entry:
++ [剑指 Offer 20. 表示数值的字符串](https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/)
+  + 解法1：[暴力匹配法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_20/Solution.java)：字符串==>预处理==>分为带E和不带E==>带E分为两部分(前面和后面)前面是整数或小数，后面必须为整数==>不带E可以是整数或小数:worried:
++ [剑指 Offer 21. 调整数组顺序使奇数位于偶数](https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
+  + 解法1：[双指针](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_21/Solution.java)：通过首尾指针，遇到刚好首是偶数，尾是奇数，直接交换，否则两个一直移动，终止条件注意一下。:laughing:
++ [剑指 Offer 22. 链表中倒数第k个节点](https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/)
+  + 解法1：[全局变量法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_22/Solution.java)：利用全局变量记录k，递归到底返回时，维护k，k为0即为目标节点，直接返回。:laughing:
+  + 解法2：[指针偏移法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_22/Solution1.java)：利用一个辅助节点，其为当前节点偏移k的节点，两个节点同时一定，辅助节点为NULL时，当前节点即为要求节点。:laughing:
++ [剑指 Offer 24. 反转链表](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/)
+  + 解法1：[递归法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_24/Solution.java())：递归到底开始反转，可以画图理解，直接看代码。:laughing:
+
+
+
+
 
 
 
