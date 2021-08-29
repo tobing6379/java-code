@@ -65,7 +65,21 @@
   + 解法1：[全局变量法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_22/Solution.java)：利用全局变量记录k，递归到底返回时，维护k，k为0即为目标节点，直接返回。:laughing:
   + 解法2：[指针偏移法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_22/Solution1.java)：利用一个辅助节点，其为当前节点偏移k的节点，两个节点同时一定，辅助节点为NULL时，当前节点即为要求节点。:laughing:
 + [剑指 Offer 24. 反转链表](https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/)
-  + 解法1：[递归法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_24/Solution.java())：递归到底开始反转，可以画图理解，直接看代码。:laughing:
+  + 解法1：[递归法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_24/Solution.java)：递归到底开始反转，可以画图理解，直接看代码。:laughing:
++ [剑指 Offer 25. 合并两个排序的链表](https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/)
+  + 解法1：[双指针法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_25/Solution.java)：通过两个指针在两条链表中遍历，不断比较两个指针的值，决定取哪个值:laughing:
++ [剑指 Offer 26. 树的子结构](https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/)
+  + 解法1：[遍历递归法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_26/Solution.java)：通过一个辅助函数来判断两棵树是否为同根子树，在原函数中遍历整棵树的所有节点:no_entry:
++ [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/)
+  + 解法1：[简单递归](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_27/Solution.java)：比较简单，没啥好说。:laughing:
++ [剑指 Offer 28. 对称的二叉树](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/)
+  + 解法1：[辅助函数法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_28/Solution.java)：主要看辅助函数。:laughing:
++ [剑指 Offer 29. 顺时针打印矩阵](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/)
+  + 解法1：[模拟](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_29/Solution.java)：思路不难，实现较复杂。:no_entry:
+
+
+
+
 
 
 

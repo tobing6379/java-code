@@ -6,8 +6,11 @@ package top.tobing;
  * @description
  */
 public class ListNode {
-    int val;
+    public int val;
     public ListNode next;
+
+    public ListNode() {
+    }
 
     ListNode(int x) {
         val = x;
@@ -16,7 +19,7 @@ public class ListNode {
     public static ListNode generateList(int end) {
         ListNode temp = new ListNode(1);
         ListNode head = temp;
-        for (int i = 0; i < end; i++) {
+        for (int i = 0; i <= end; i++) {
             temp.next = new ListNode(i);
             temp = temp.next;
         }
