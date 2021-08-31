@@ -1,4 +1,4 @@
-package top.tobing.algorithm.back_track.mianshi08_12;
+package top.tobing.leetcode.algo.back_track.mianshi08_12;
 
 import java.util.ArrayList;
 import java.util.List;

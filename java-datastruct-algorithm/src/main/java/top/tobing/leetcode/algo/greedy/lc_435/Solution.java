@@ -1,8 +1,6 @@
-package top.tobing.algorithm.greedy.lc_435;
+package top.tobing.leetcode.algo.greedy.lc_435;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.List;
 
 /**

@@ -1,4 +1,4 @@
-package top.tobing.algorithm.greedy.lc_56;
+package top.tobing.leetcode.algo.greedy.lc_56;
 
 import java.util.Arrays;
 
