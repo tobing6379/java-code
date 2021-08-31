@@ -76,6 +76,18 @@
   + 解法1：[辅助函数法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_28/Solution.java)：主要看辅助函数。:laughing:
 + [剑指 Offer 29. 顺时针打印矩阵](https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/)
   + 解法1：[模拟](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_29/Solution.java)：思路不难，实现较复杂。:no_entry:
++ [剑指 Offer 30. 包含min函数的栈](https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/)
+  + 解法1：[双栈法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_30/Solution.java)：一个保存正常顺序，一保存递减顺序。:laughing:
++ [剑指 Offer 31. 栈的压入、弹出序列](https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/)
+  + 解法1：[模拟](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_30/Solution.java)：使用栈模拟。:worried:
++ [剑指 Offer 32 - I. 从上到下打印二叉树](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/)
+  + 解法1：[辅助队列](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_32_i/Solution.java)：利用辅助队列记录层序遍历的结果:worried:
++ [剑指 Offer 32 - II. 从上到下打印二叉树](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/)
+  + 解法1：[辅助队列](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_32_ii/Solution.java)：利用辅助队列记录，主要多了不同层的判断（利用queue.size记录）:worried:
+  + 解法2：[递归法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_32_ii/Solution1.java)：利用递归辅助函数，每一层添加index，记录不同层的遍历。:worried:
++ [剑指 Offer 32 - III. 从上到下打印二叉树](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)
+  + 解法1：[双向队列+奇偶分离](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_32_iii/Solution.java)：偶数正向添加，先放左节点，后放右节点；奇数反向添加，先放右节点，再放左节点。:worried:
+  + 解法2：[数组反转+奇偶分离](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_32_iii/Solution1.java)：偶数不反转，奇数反转。:worried:
 
 
 

@@ -697,7 +697,7 @@ BM算法，Boyer-Moore算法，主要通过跳过一些无意义的比较来提�
 
 ### 回溯算法
 
-典型应用：数独、八皇后、0-1背包、图的着色、旅行商问题、全排列
+典型应用：深度优先搜索、八皇后、0-1 背包问题、图的着色、旅行商问题、数独、全排列、正则表达式匹配
 
 回溯的处理思想类似于枚举搜索。即枚举所有的解，找到满足期望的解。为了有规律地枚举所有可能的解，避免遗漏和重复，可以把问题的求解过程分为多个阶段。每个阶段会面对一个岔路口，这时先随意选择一条路走，当发现路走不通时，就会退到上一个岔路口，另选一种走法继续走。
 
@@ -707,9 +707,25 @@ BM算法，Boyer-Moore算法，主要通过跳过一些无意义的比较来提�
 
 可以把这个问题划分成 8 个阶段，依次将 8 个棋子放到第一行、第二行、第三行……第八行。在放置的过程中，我们不停地检查当前的方法，是否满足要求。如果满足，则跳到下一行继续放置棋子；如果不满足，那就再换一种方法，继续尝试。
 
+**应用2-0-1背包问题**
 
+有一个背包，背包总的承载重量是 Wkg。现在我们有 n 个物品，每个物品的重量不等，并且不可分割。我们现在期望选择几件物品，装载到背包中。在不超过背包所能装载重量的前提下，如何让背包中物品的总重量最大？
+
+求解：对于每个物品来说，都有两种选择，装进背包或者不装进背包。对于 n 个物品来说，总的装法就有 2^n 种，去掉总重量超过 Wkg 的，从剩下的装法中选择总重量最接近 Wkg的。
+
+回溯法优化：为了不重复地穷举出这 2^n 种装法，可以把物品依次排列，整个问题就分解为了 n 个阶段，每个阶段对应一个物品怎么选择。先对第一个物品进行处理，选择装进去或者不装进去，然后再递归地处理剩下的物品。
+
+**应用3-正则表达式**
+
+判断一个给定的文本，能否跟给定的正则表达式匹配？（假设正则表达式中只包含「*」和「？」两种通配符）
+
+求解：依次考察正则表达式中的每个字符，当是非通配符时，我们就直接跟文本的字符进行匹配，如果相同，则继续往下处理；如果不同，则回溯。
+
+如果遇到特殊字符的时候，有多种处理方式。此时先随意选择一种匹配方案，然后继续考察剩下的字符。如果中途发现无法继续匹配下去，回到当前岔路口，重新选择另一种匹配方案，继续匹配。
 
 ### 动态规划
+
+
 
 
 
@@ -1697,7 +1713,9 @@ BFS思想简单直观、但是实现起来并不容易，需要使用到一些�
 
 ## 题目汇总
 
-### 贪心算法相关
+### 算法相关
+
+#### 贪心算法
 
 找零钱问题
 
@@ -1714,15 +1732,43 @@ BFS思想简单直观、但是实现起来并不容易，需要使用到一些�
 + [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game)
 + [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii)
 
-### 分治算法相关
+#### 分治算法
 
 + [剑指 Offer 51. 数组中的逆序对](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
 
-### 堆相关
+#### 回溯算法
 
-+ [295. 数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream)
+排列问题
 
-### 链表相关
++ [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number)
++ [93. 复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses)
++ [131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning)
++ [46. 全排列](https://leetcode-cn.com/problems/permutations)
++ [47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii)
+
+组合问题
+
++ [77. 组合](https://leetcode-cn.com/problems/combinations)
++ [39. 组合总和](https://leetcode-cn.com/problems/combination-sum)
++ [40. 组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii)
++ [216. 组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii)
++ [78. 子集](https://leetcode-cn.com/problems/subsets)
++ [90. 子集 II](https://leetcode-cn.com/problems/subsets-ii)
++ [401. 二进制手表](https://leetcode-cn.com/problems/binary-watch)
+
+二维问题
+
++ [79. 单词搜索](https://leetcode-cn.com/problems/word-search)
++ [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands)
++ [130. 被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions)
++ [417. 太平洋大西洋水流](https://leetcode-cn.com/problems/pacific-atlantic-water-flow)
++ [51. N 皇后](https://leetcode-cn.com/problems/n-queens)
++ [52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii)
++ [37. 解数独](https://leetcode-cn.com/problems/sudoku-solver)
+
+### 数据结构相关
+
+#### 链表
 
 单链表反转
 
@@ -1734,9 +1780,17 @@ BFS思想简单直观、但是实现起来并不容易，需要使用到一些�
 
 求链表的中间结点
 
-### 栈相关
+#### 栈
 
 leetcode20,155,232,844,224,682,496.  
 
 表达式求值、括号匹配
+
+#### 堆
+
++ [295. 数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream)
+
+
+
+
 
