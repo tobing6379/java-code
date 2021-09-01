@@ -88,6 +88,15 @@
 + [剑指 Offer 32 - III. 从上到下打印二叉树](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/)
   + 解法1：[双向队列+奇偶分离](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_32_iii/Solution.java)：偶数正向添加，先放左节点，后放右节点；奇数反向添加，先放右节点，再放左节点。:worried:
   + 解法2：[数组反转+奇偶分离](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_32_iii/Solution1.java)：偶数不反转，奇数反转。:worried:
++ [剑指 Offer 33. 二叉搜索树的后序](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/)
+  + 解法1：[后序遍历定义](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_33/Solution.java)：|左子树|右子树|当前根| >>> |<当前根|>当前根|当前根|。:no_entry:
++ [剑指 Offer 34. 二叉树中和为某个值](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/)
+  + 解法1：[辅助栈+回溯](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_34/Solution.java)：辅助栈记录到叶子节点路径，每次访问节点入栈，访问完节点回溯出栈。:no_entry:
++ [剑指 Offer 35. 复杂链表的复制](https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/)
+  + 解法1：[辅助Map+2轮遍历](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_35/Solution.java)：辅助Map记录oldNode到newNode的节点:worried:
+  + 解法2：[拼接拆分+3轮遍历](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_35/Solution1.java)：第一轮复制，第二轮更新random，第三轮分离:no_entry:
++ [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
+  + 解法1：[全局变量+中序遍历法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_36/Solution.java)：全局变量prev、head，中序遍历转换为链表:no_entry:
 
 
 

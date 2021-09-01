@@ -725,9 +725,17 @@ BM算法，Boyer-Moore算法，主要通过跳过一些无意义的比较来提�
 
 ### 动态规划
 
+将原问题拆解成若干子问题，同时保存子问题的答案，使得每个子问题只求解一次，最终获得原问题的答案。
 
+求解动态规划类问题可以按照以下的思路来思考问题。
 
-
+```
+                           ------------> 记忆化搜索 （自顶向下）  
+                          |
+递归问题 ----> 重叠子问题 ----
+                          |
+                           ------------> 动态规划 （自下而上）  
+```
 
 
 
@@ -1719,24 +1727,6 @@ BFS思想简单直观、但是实现起来并不容易，需要使用到一些�
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 题目汇总
 
 ### 算法相关
@@ -1792,6 +1782,18 @@ BFS思想简单直观、但是实现起来并不容易，需要使用到一些�
 + [52. N皇后 II](https://leetcode-cn.com/problems/n-queens-ii)
 + [37. 解数独](https://leetcode-cn.com/problems/sudoku-solver)
 
+#### 动态规划
+
++ [120. 三角形最小路径和](https://leetcode-cn.com/problems/triangle)
++ [64. 最小路径和](https://leetcode-cn.com/problems/minimum-path-sum)
++ [343. 整数拆分](https://leetcode-cn.com/problems/integer-break)
++ [279. 完全平方数](https://leetcode-cn.com/problems/perfect-squares)
++ [91. 解码方法](https://leetcode-cn.com/problems/decode-ways)
++ [62. 不同路径](https://leetcode-cn.com/problems/unique-paths)
++ [63. 不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii)
+
+
+
 ### 数据结构相关
 
 #### 链表
@@ -1816,7 +1818,24 @@ leetcode20,155,232,844,224,682,496.
 
 + [295. 数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream)
 
+#### 并查集
 
+基础问题
 
++ [990. 等式方程的可满足性](https://leetcode-cn.com/problems/satisfiability-of-equality-equations)
++ [547. 省份数量](https://leetcode-cn.com/problems/number-of-provinces)
++ [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands)
++ [684. 冗余连接](https://leetcode-cn.com/problems/redundant-connection)
++ [1319. 连通网络的操作次数](https://leetcode-cn.com/problems/number-of-operations-to-make-network-connected)
++ [765. 情侣牵手](https://leetcode-cn.com/problems/couples-holding-hands)
 
+进阶问题
 
++ [399. 除法求值](https://leetcode-cn.com/problems/evaluate-division)
++ [959. 由斜杠划分区域](https://leetcode-cn.com/problems/regions-cut-by-slashes)
++ [778. 水位上升的泳池中游](https://leetcode-cn.com/problems/swim-in-rising-water)
++ [1202. 交换字符串中的元素](https://leetcode-cn.com/problems/smallest-string-with-swaps)
+
++ [947. 移除最多的同行或同](https://leetcode-cn.com/problems/most-stones-removed-with-same-row-or-column)
+
++ [803. 打砖块](https://leetcode-cn.com/problems/bricks-falling-when-hit)
