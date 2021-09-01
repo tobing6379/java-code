@@ -1,4 +1,4 @@
-package top.tobing.leetcode.datastruct.union_find.lc_547;
+package top.tobing.leetcode.lc_547;
 
 import java.util.HashSet;
 import java.util.Set;

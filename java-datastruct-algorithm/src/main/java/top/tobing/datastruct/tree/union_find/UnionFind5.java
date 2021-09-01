@@ -89,6 +89,18 @@ public class UnionFind5 implements UF {
             parent[qRoot] = parent[pRoot];
             rank[pRoot]++;
         }
+    }
 
+    /**
+     * 统计并查集内的区间个数
+     */
+    public int count() {
+        int count = 0;
+        for (int i = 0; i < parent.length; i++) {
+            if (parent[i] == i) {
+                count++;
+            }
+        }
+        return count;
     }
 }

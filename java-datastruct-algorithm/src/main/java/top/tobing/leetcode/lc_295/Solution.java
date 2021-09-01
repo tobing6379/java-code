@@ -1,4 +1,4 @@
-package top.tobing.leetcode.datastruct.heap.lc_295;
+package top.tobing.leetcode.lc_295;
 
 import java.util.Collections;
 import java.util.PriorityQueue;
