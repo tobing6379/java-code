@@ -98,6 +98,9 @@
 + [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
   + 解法1：[全局变量+中序遍历法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_36/Solution.java)：全局变量prev、head，中序遍历转换为链表:no_entry:
 
++ [剑指 Offer 37. 序列化二叉树](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/)
+  + 解法1：[层序遍历](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_37/Solution.java)：层序遍历添加额外逻辑。:no_entry:
+
 
 
 

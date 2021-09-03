@@ -1,6 +1,7 @@
 package top.tobing.jz_07;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -23,7 +24,8 @@ public class Solution {
         for (int i = 0; i < inorder.length; i++) {
             map.put(inorder[i], i);
         }
-        return buildTree(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1, map);
+        return build(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1, map);
+        // buildTree(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1, map);
     }
 
     /**
@@ -84,6 +86,65 @@ public class Solution {
 
         return cur;
     }
+
+    private TreeNode build(int[] preOrder,
+                           int preStartIdx,
+                           int preEndIdx,
+                           int[] inOrder,
+                           int inStartIdx,
+                           int inEndIdx,
+                           Map<Integer, Integer> inorderMap) {
+        if (preStartIdx == preEndIdx) {
+            return new TreeNode(preOrder[preStartIdx]);
+        }
+
+        Integer rootVal = preOrder[preStartIdx];
+        TreeNode curNode = new TreeNode(rootVal);
+
+
+        /**
+         * 【先序遍历序列】
+         * preStartIdx                                    preEndIdx
+         * ——------------------——------------------——--------------
+         * |      根节点      |      左子树      |      右子树      |
+         * ——------------------——------------------——--------------
+         * 【中序遍历序列】
+         * inStartIdx             inOrderMid               inEndIdx
+         * ——------------------——------------------——--------------
+         * |      左子树      |      根节点      |      右子树      |
+         * ——------------------——------------------——--------------
+         * 左子树节点个数：inOrderMid - inStatIdx;
+         * 右子树节点个数：inEndIdx - inOrderMid;
+         * 事实上只需要知道左子树节点个数即可
+         */
+
+        Integer inOrderMid = inorderMap.get(rootVal);
+        int leftLen = inOrderMid - inStartIdx;
+        int rightLen = inEndIdx - inOrderMid;
+        if (leftLen != 0) {
+            TreeNode leftTree = build(preOrder,
+                    preStartIdx + 1,
+                    preStartIdx + leftLen,
+                    inOrder,
+                    inStartIdx,
+                    inOrderMid - 1,
+                    inorderMap);
+            curNode.left = leftTree;
+        }
+        if (rightLen != 0) {
+            TreeNode rightTree = build(preOrder,
+                    preStartIdx + leftLen + 1,
+                    preEndIdx,
+                    inOrder,
+                    inOrderMid + 1,
+                    inEndIdx,
+                    inorderMap);
+            curNode.right = rightTree;
+        }
+
+        return curNode;
+    }
+
 
     public static void main(String[] args) {
         new Solution().buildTree(new int[]{1, 2}, new int[]{2, 1});

@@ -1,4 +1,4 @@
-package top.tobing.leetcode.jz_1319;
+package top.tobing.leetcode.lc_1319;
 
 import java.util.HashSet;
 import java.util.Set;

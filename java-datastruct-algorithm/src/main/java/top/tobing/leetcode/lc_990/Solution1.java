@@ -1,4 +1,4 @@
-package top.tobing.leetcode.jz_990;
+package top.tobing.leetcode.lc_990;
 
 /**
  * @author tobing
