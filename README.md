@@ -6,9 +6,9 @@
 
 使用本地IDE时，推荐使用 [IDEA](https://www.jetbrains.com/idea/)，以支持注释的`{@link }`跳转特性。
 
-| 目录                | 简介              |
-| ------------------- | ----------------- |
-| java-design-pattern | 设计模式相关代码  |
-| jianzhi-offer       | 剑指offer相关代码 |
-| java-datastruct     | 数据结构相关代码  |
+| 目录                                                     | 简介              |
+| -------------------------------------------------------- | ----------------- |
+| [java-design-pattern](./java-design-pattern)             | 设计模式相关代码  |
+| [jianzhi-offer](./jianzhi-offer)                         | 剑指offer刷题代码 |
+| [java-datastruct-algorithm](./java-datastruct-algorithm) | 数据结构相关代码  |
 
