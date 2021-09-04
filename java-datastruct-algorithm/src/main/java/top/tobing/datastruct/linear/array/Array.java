@@ -173,6 +173,18 @@ public class Array<E> {
         }
     }
 
+    /**
+     * 将数组中下标为i的元素与小标为j的下标进行交换
+     */
+    public void swap(int i, int j) {
+        if (i < 0 || i >= size || j < 0 || j >= size) {
+            throw new IllegalArgumentException("Swap failed.");
+        }
+        E tmp = data[i];
+        data[i] = data[j];
+        data[j] = tmp;
+    }
+
     @Override
     public String toString() {
         StringBuilder res = new StringBuilder();
