@@ -2,6 +2,12 @@
 
 剑指offer相关刷题代码，基于[leetcode](https://leetcode-cn.com/problem-list/xb9nqhhg/)。
 
+| 表情       | 含义                   |
+| ---------- | ---------------------- |
+| :laughing: | 容易想到，容易理解     |
+| :worried:  | 不容易想到，容易理解   |
+| :no_entry: | 不容易想到，不容易理解 |
+
 ## 题目
 
 + [剑指 Offer 03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)
@@ -97,17 +103,59 @@
   + 解法2：[拼接拆分+3轮遍历](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_35/Solution1.java)：第一轮复制，第二轮更新random，第三轮分离:no_entry:
 + [剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/)
   + 解法1：[全局变量+中序遍历法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_36/Solution.java)：全局变量prev、head，中序遍历转换为链表:no_entry:
-
 + [剑指 Offer 37. 序列化二叉树](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/)
   + 解法1：[层序遍历](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_37/Solution.java)：层序遍历添加额外逻辑。:no_entry:
++ [剑指 Offer 38. 字符串的排列](https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/)
+  + 解法1：[暴力回溯法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_38/Solution.java)：排列问题可以使用回溯法。:worried:
++ [剑指 Offer 39. 数组中出现次数超过](https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/)
+  + 解法1：[哈希表法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_39/Solution.java)：利用哈希表统计元素的个数。:laughing:
+  + 解法2：[摩尔投票法]()：一种用于求多数元素的算法，要求元素计数要超出集合大小一半。:worried:
++ [剑指 Offer 40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)
+  + 解法1：[简单排序法](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_40/Solution.java)：先排序，再取前k个。:laughing:
+  + 解法2：[最小堆](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_40/Solution1.java)：利用最小堆保存元素，取k个堆顶元素。:laughing:
+  + 解法3：[二分查找树](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_40/Solution2.java)：利用二分搜索树保存元素，中序遍历前k个元。:laughing:
+  + 解法4：[快排实现](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_40/Solution3.java)：利用快排的切分函数，如果切分得到的pivot刚好为k，说明前面k个元素就是数组的最小k个数。:no_entry::no_entry:
+  + 解法5：[计数排序](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_40/Solution4.java)：元素有限，可以利用计数排序。:no_entry:
++ [剑指 Offer 41. 数据流中的中位数](https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/)
+  + 解法1：[双堆](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_41/Solution.java)：最小堆和最大堆。:laughing:
 
 
 
 
 
+## 算法汇总
 
+### 经典问题
 
+#### TopK 问题
 
+对于经典TopK问题，有 4 种通用解决方案。
+
+解题思路：
+一、用快排最最最高效解决 TopK 问题：
+二、大根堆(前 K 小) / 小根堆（前 K 大),Java中有现成的 PriorityQueue，实现起来最简单：
+三、二叉搜索树也可以 解决 TopK 问题哦
+四、数据范围有限时直接计数排序就行了：
+
+[4种解法秒杀TopK](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/solution/3chong-jie-fa-miao-sha-topkkuai-pai-dui-er-cha-sou/)
+
+### 特定问题
+
+#### 摩尔投票法
+
+【摩尔多数投票法】
+使用场景：在集合中寻找可能存在的多数元素，这一元素在输入的序列重复出现并占到了序列元素的一半以上；
+
+算法原理：如果集合中元素超过一半，如果该元素与它不相同的元素抵消则最终剩下的元素肯定是多数元素；
+
+例外情况：假设集合中没有多数元素，可以在执行上述代码之后，统计多数元素是否的数量是否大于length/2；
+
+【参考文献】
+
++ [论文MJRTY A Fast Majority Vote Algorithm](https://www.cs.ou.edu/~rlpage/dmtools/mjrty.pdf)
+
++ [算法演示网站](https://www.cs.utexas.edu/~moore/best-ideas/mjrty/index.html)
++ [维基百科](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm)
 
 
 
