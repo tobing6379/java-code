@@ -13,6 +13,14 @@ public class Array<E> {
     private E[] data;
     private int size;
 
+    public Array(E[] arr) {
+        data = (E[])new Object[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            data[i] = arr[i];
+        }
+        size = arr.length;
+    }
+
     /**
      * 构造函数，传入数组的容量capacity构造Array
      */

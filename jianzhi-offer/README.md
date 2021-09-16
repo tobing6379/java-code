@@ -119,6 +119,13 @@
 + [剑指 Offer 41. 数据流中的中位数](https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/)
   + 解法1：[双堆](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_41/Solution.java)：最小堆和最大堆。:laughing:
 
++ [剑指 Offer 42. 连续子数组的最大和](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
+  + 解法1：[暴力解](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_42/Solution.java)：维护一个窗口，每次计算窗口内的值以及窗口大小。:laughing:
+  + 解法2：[动态规划](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_42/Solution1.java)：当前的状态可以由前一个状态来推导。:laughing:
++ [剑指 Offer 43. 1～n 整数中 1 出现的次数](https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/)
+  + //TODO
++ 
+
 
 
 
