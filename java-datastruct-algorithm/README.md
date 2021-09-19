@@ -11,6 +11,44 @@
 - [295. 数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream)
   - 解法1：双堆：前50%使用最大堆，后50%使用最小堆😟
 
+### 图
+
+【floodfill】
+
++ [695. 岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island)
+  + 解法1：常规DFS
+  + 解法2：原地DFS
++ [785. 判断二分图](https://leetcode-cn.com/problems/is-graph-bipartite)
+  + 解法1：DFS二分图
++ [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands)
+  + 解法1：并查集
+  + 解法2：常规DFS
+  + 解法3：简化DFS
+  + 解法4：BFS
++ [1020. 飞地的数量](https://leetcode-cn.com/problems/number-of-enclaves)
+  + 解法1：DFS：利用深度优先遍历的返回值，判断是否与边界相连
++ [130. 被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions)
+  + 解法1：DFS：从边界节点进行DFS，将所有能遍历得到的O记录，那么不被记录的O就是被X包围的
++ [733. 图像渲染](https://leetcode-cn.com/problems/flood-fill)
+  + 
++ [1034. 边框着色](https://leetcode-cn.com/problems/coloring-a-border)
++ [529. 扫雷游戏](https://leetcode-cn.com/problems/minesweeper)
++ [827. 最大人工岛](https://leetcode-cn.com/problems/making-a-large-island)
+
+【BFS】
+
++ 
+
+
+
+
+
+
+
+
+
+
+
 ## 算法相关
 
 #### 贪心算法
