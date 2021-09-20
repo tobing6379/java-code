@@ -118,15 +118,43 @@
   + 解法5：[计数排序](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_40/Solution4.java)：元素有限，可以利用计数排序。:no_entry:
 + [剑指 Offer 41. 数据流中的中位数](https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/)
   + 解法1：[双堆](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_41/Solution.java)：最小堆和最大堆。:laughing:
-
 + [剑指 Offer 42. 连续子数组的最大和](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/)
   + 解法1：[暴力解](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_42/Solution.java)：维护一个窗口，每次计算窗口内的值以及窗口大小。:laughing:
   + 解法2：[动态规划](https://github.com/Tobingindex/java-code/blob/master/jianzhi-offer/src/main/java/top/tobing/jz_42/Solution1.java)：当前的状态可以由前一个状态来推导。:laughing:
 + [剑指 Offer 43. 1～n 整数中 1 出现的次数](https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/)
   + //TODO
-+ 
-
-
++ [剑指 Offer 44. 数字序列中某一位的](https://leetcode-cn.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/)
+  + 解法1：树位法：定位数位、定位在k位数上的第m个。:worried:
++ [剑指 Offer 45. 把数组排成最小的](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)
+  + 解法1：排序法：相当于根据给出字符串进行排序。:no_entry:
++ [剑指 Offer 46. 把数字翻译成字符串](https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/)
+  + 解法1：dfs：字母的范围是0到25，如果是10~25可以选择拆分为两个，其他仅能拆分一个；:laughing:
++ [剑指 Offer 47. 礼物的最大价值](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/)
+  + 解法1：动态规划：`dp[i][j] += Math.max(dp[i-1][j], dp[i][j-1])`:laughing:
++ [剑指 Offer 48. 最长不含重复字符的子字](https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/)
+  + 解法1：暴力解法：`str[i, j]`是否存在重复子串。:laughing:
+  + 解法2：动态规划：TODO
++ [剑指 Offer 49. 丑数](https://leetcode-cn.com/problems/chou-shu-lcof/)
+  + 解法1：三数取小法，使用a/b/c记录乘上2/3/5的值。:no_entry:
++ [剑指 Offer 50. 第一个只出现一](https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/)
+  + 解法1：统计法：全都是小写字符，创建一个26的数组。:laughing:
++ [剑指 Offer 51. 数组中的逆序对](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
+  + 解法1：归并排序法：在归并排序中统计逆序对。:worried:
++ [剑指 Offer 52. 两个链表的第一个公](https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/)
+  + 解法1：辅助Set：遍历A放到Set，遍历B。:laughing:
+  + 解法2：双指针：A指针遍历链表A之后继续遍历链表B。:worried:
++ [剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
+  + 解法1：暴力解：一次遍历。:laughing:
+  + 解法2：二分法：二分查找。:worried:
++ [剑指 Offer 53 - II. 0～n-1中缺失的数字](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
+  + 解法1：暴力解：一次遍历。:laughing:
+  + 解法2：二分法：二分查找。:worried:
++ [剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
+  + 解法1：中序遍历：BST的中序遍历性质。
++ [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/)
+  + 解法1：简单递归法：
++ [剑指 Offer 55 - II. 平衡二叉树](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/)
+  + 解法1：简单递归法：
 
 
 

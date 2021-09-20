@@ -15,6 +15,9 @@ public class Solution {
     private int count;
 
 
+    /**
+     * 归并排序法
+     */
     public int reversePairs(int[] nums) {
         count = 0;
         mergeSortCount(nums, 0, nums.length - 1);
