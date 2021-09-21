@@ -155,6 +155,29 @@
   + 解法1：简单递归法：
 + [剑指 Offer 55 - II. 平衡二叉树](https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/)
   + 解法1：简单递归法：
++ [剑指 Offer 56 - I. 数组中数字出现的次数](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/)
+  + 解法1：位运算：利用异或的性质，将个不同数字分组。:no_entry:
++ [剑指 Offer 56 - II. 数组中数字出现的次数 II](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/)
+  + 解法1：Map统计：利用Map统计出现的次数。:laughing:
+  + 解法2：二进制统计：利用32位数组统计二进制的中1出现的次数。:worried:
+  + 解法3：TODO:no_entry:
++ [剑指 Offer 57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
+  + 解法1：辅助Map：遍历过程不断添加到Map，判断target-curVal是否存在。:laughing:
+  + 解法2：双指针：消除行列法，类似于JZ04解法2。:worried:
++ [剑指 Offer 57 - II. 和为s的连续正数序列](https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/)
+  + 解法1：滑动窗口：维护滑动窗口的值。:no_entry:
++ [剑指 Offer 58 - I. 翻转单词顺序](https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/)
+  + 解法1：split：使用split。:laughing:
++ [剑指 Offer 58 - II. 左旋转字符串](https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
+  + 解法1：StringBuilder：使用StringBuilder。:laughing:
++ [剑指 Offer 59 - I. 滑动窗口的最大值](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
+  + 解法1：暴力解：利用findMax函数。:laughing:
+  + 解法2：最大堆：利用MaxHeap。:laughing:
+  + 解法3：单调栈：TODO
+
+
+
+
 
 
 

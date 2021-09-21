@@ -12,6 +12,7 @@
         <module>java-design-pattern</module>
         <module>jianzhi-offer</module>
         <module>java-datastruct-algorithm</module>
+        <module>java-base</module>
     </modules>
 
     <properties>
