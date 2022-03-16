@@ -1,4 +1,4 @@
-package top.tobing.sercurity;
+package top.tobing.security.algo;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;

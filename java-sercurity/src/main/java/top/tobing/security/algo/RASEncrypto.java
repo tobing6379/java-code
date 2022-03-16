@@ -1,4 +1,4 @@
-package top.tobing.sercurity;
+package top.tobing.security.algo;
 
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
